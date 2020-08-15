@@ -1,13 +1,27 @@
 import * as React from 'react';
-import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router';
-import store from './redux/store';
-import history from './utils/history';
+import UserList from 'components/UserList';
+import { Route, NavLink, Switch } from 'react-router-dom';
+import Home from 'components/routes/Home';
+import Users from 'components/routes/Users';
 
 const App: React.FC = () => (
-  <Provider store={store}>
-    <ConnectedRouter history={history}>Hello</ConnectedRouter>
-  </Provider>
+  <div>
+    <div>
+      <NavLink to="/home" activeStyle={{ color: 'red' }}>
+        Home
+      </NavLink>
+      <NavLink to="/users" activeStyle={{ color: 'red' }}>
+        Users
+      </NavLink>
+    </div>
+    <div>
+      <Switch>
+        <Route path="/home" component={Home} />
+        <Route path="/users" component={Users} />
+      </Switch>
+    </div>
+    <UserList />
+  </div>
 );
 
 export default App;

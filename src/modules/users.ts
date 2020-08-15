@@ -1,46 +1,50 @@
 import { Reducer } from 'redux';
 import { createSelector } from 'reselect';
 import { ThunkAction } from 'redux-thunk';
-import { RootState } from '../redux/reducer';
+import { RootState } from 'redux/createRootReducer';
+import http from 'utils/api';
 
 /**
  * Constants
  */
 export enum ACTION {
-  LIST_REQUEST = '@@themes/LIST_REQUEST',
-  LIST_SUCCESS = '@@themes/LIST_SUCCESS',
-  LIST_FAILURE = '@@themes/LIST_FAILURE',
+  USERS_REQUEST = '@@users/USERS_REQUEST',
+  USERS_SUCCESS = '@@users/USERS_SUCCESS',
+  USERS_FAILURE = '@@users/USERS_FAILURE',
 }
 
 /**
  * Reducer
  */
-export interface ThemeState {
-  readonly list: Theme[];
+export interface UsersState {
+  readonly list: User[];
   readonly loading: boolean;
   readonly error: string;
 }
-export interface Theme {
+
+export interface User {
   id: number;
-  title: string;
-  description: string;
+  name: string;
+  username: string;
 }
-const initialState: ThemeState = {
+
+const initialState: UsersState = {
   list: [],
   loading: false,
   error: '',
 };
-const reducer: Reducer<ThemeState, ActionType> = (
+
+const reducer: Reducer<UsersState, ActionType> = (
   state = initialState,
   action,
 ) => {
   switch (action.type) {
-    case ACTION.LIST_REQUEST:
+    case ACTION.USERS_REQUEST:
       return {
         ...state,
         loading: true,
       };
-    case ACTION.LIST_SUCCESS:
+    case ACTION.USERS_SUCCESS:
       return {
         ...state,
         list: action.payload,
@@ -55,8 +59,8 @@ export { reducer as usersReducer };
 /**
  * Selectors
  */
-export const stateSelector = (state: RootState): ThemeState => state.users;
-export const themeListSelector = createSelector(
+export const stateSelector = (state: RootState): UsersState => state.users;
+export const userListSelector = createSelector(
   stateSelector,
   (state) => state.list,
 );
@@ -64,39 +68,31 @@ export const themeListSelector = createSelector(
 /**
  * Action Creators
  */
-interface ThemesRequest {
-  type: typeof ACTION.LIST_REQUEST;
+interface UserRequest {
+  type: typeof ACTION.USERS_REQUEST;
 }
-interface ThemesSuccess {
-  type: typeof ACTION.LIST_SUCCESS;
-  payload: Theme[];
+
+interface UserSuccess {
+  type: typeof ACTION.USERS_SUCCESS;
+  payload: User[];
 }
-type ActionType = ThemesRequest | ThemesSuccess;
+
+type ActionType = UserRequest | UserSuccess;
 
 type ThunkResult<R> = ThunkAction<R, RootState, void, ActionType>;
 
-const fetchPosts = (): ThunkResult<void> => {
+export const fetchUserList = (): ThunkResult<void> => {
   return async (dispatch) => {
-    const posts = await fetch('https://jsonplaceholder.typicode.com/posts');
     dispatch({
-      type: ACTION.LIST_REQUEST,
+      type: ACTION.USERS_REQUEST,
     });
-    console.log('[POSTS]', posts);
-  };
-};
-
-export const fetchThemeList = (): ThunkResult<void> => {
-  return async (dispatch) => {
-    dispatch(fetchPosts());
+    const userList = await http<User[]>(
+      'https://jsonplaceholder.typicode.com/users',
+    );
+    console.log('userList', userList);
     dispatch({
-      type: ACTION.LIST_REQUEST,
-    });
-    const themes = await fetch(
-      `${process.env.PUBLIC_URL}/mock/themes.json`,
-    ).then((res) => res.json());
-    dispatch({
-      type: ACTION.LIST_SUCCESS,
-      payload: themes,
+      type: ACTION.USERS_SUCCESS,
+      payload: userList,
     });
   };
 };
