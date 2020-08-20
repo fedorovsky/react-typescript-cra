@@ -33,6 +33,7 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-console": "off",
     "import/no-cycle": "off",
     "linebreak-style": "off",
