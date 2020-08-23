@@ -1,8 +1,8 @@
 import { Reducer } from 'redux';
 import { createSelector } from 'reselect';
 import { ThunkAction } from 'redux-thunk';
-import { RootState } from 'redux/createRootReducer';
 import http from 'utils/api';
+import { RootState } from './index';
 
 /**
  * Constants
@@ -13,19 +13,16 @@ export enum ACTION {
   USERS_FAILURE = '@@users/USERS_FAILURE',
 }
 
-/**
- * Reducer
- */
-export interface UsersState {
-  readonly list: User[];
-  readonly loading: boolean;
-  readonly error: string;
-}
-
 export interface User {
   id: number;
   name: string;
   username: string;
+}
+
+export interface UsersState {
+  readonly list: User[];
+  readonly loading: boolean;
+  readonly error: string;
 }
 
 const initialState: UsersState = {

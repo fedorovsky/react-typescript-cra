@@ -1,12 +1,16 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import { createBrowserHistory } from 'history';
 import { Provider, ReactReduxContext } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
-import configureStore, { history } from 'redux/configureStore';
-import ReactDOM from 'react-dom';
+import configureStore from './configureStore';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const store = configureStore(/* provide initial state if any */);
+const history = createBrowserHistory();
+
+const initialState = undefined; // window.INITIAL_REDUX_STATE
+const store = configureStore(history, initialState);
 
 ReactDOM.render(
   <React.StrictMode>

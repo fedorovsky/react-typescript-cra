@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
-import { userListSelector, fetchUserList } from 'modules/users';
+import { userListSelector, fetchUserList } from 'store/users';
+import { Wrapper } from './UserList.styled';
 
 const UserList: React.FC = () => {
   const userList = useSelector(userListSelector, shallowEqual);
@@ -9,7 +10,7 @@ const UserList: React.FC = () => {
   const handleClick = () => dispatch(fetchUserList());
 
   return (
-    <div>
+    <Wrapper>
       <button type="button" onClick={handleClick}>
         GET USER LIST
       </button>
@@ -19,7 +20,7 @@ const UserList: React.FC = () => {
           <li key={user.id}>{user.name}</li>
         ))}
       </ul>
-    </div>
+    </Wrapper>
   );
 };
 
