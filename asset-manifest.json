@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "https://fedorovsky.github.io/code-react-typescript/static/js/main.d7df8d8e.chunk.js",
-    "main.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/main.d7df8d8e.chunk.js.map",
+    "main.js": "https://fedorovsky.github.io/code-react-typescript/static/js/main.e2793cdb.chunk.js",
+    "main.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/main.e2793cdb.chunk.js.map",
     "runtime-main.js": "https://fedorovsky.github.io/code-react-typescript/static/js/runtime-main.2021d8c3.js",
     "runtime-main.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/runtime-main.2021d8c3.js.map",
-    "static/js/2.610ef4d3.chunk.js": "https://fedorovsky.github.io/code-react-typescript/static/js/2.610ef4d3.chunk.js",
-    "static/js/2.610ef4d3.chunk.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/2.610ef4d3.chunk.js.map",
+    "static/js/2.7541de7e.chunk.js": "https://fedorovsky.github.io/code-react-typescript/static/js/2.7541de7e.chunk.js",
+    "static/js/2.7541de7e.chunk.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/2.7541de7e.chunk.js.map",
     "index.html": "https://fedorovsky.github.io/code-react-typescript/index.html",
-    "precache-manifest.058d6b7ebdda9d4a11bd203384c1718c.js": "https://fedorovsky.github.io/code-react-typescript/precache-manifest.058d6b7ebdda9d4a11bd203384c1718c.js",
+    "precache-manifest.5d94df83e43663bb59cb71cffcf82bf8.js": "https://fedorovsky.github.io/code-react-typescript/precache-manifest.5d94df83e43663bb59cb71cffcf82bf8.js",
     "service-worker.js": "https://fedorovsky.github.io/code-react-typescript/service-worker.js",
-    "static/js/2.610ef4d3.chunk.js.LICENSE.txt": "https://fedorovsky.github.io/code-react-typescript/static/js/2.610ef4d3.chunk.js.LICENSE.txt"
+    "static/js/2.7541de7e.chunk.js.LICENSE.txt": "https://fedorovsky.github.io/code-react-typescript/static/js/2.7541de7e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2021d8c3.js",
-    "static/js/2.610ef4d3.chunk.js",
-    "static/js/main.d7df8d8e.chunk.js"
+    "static/js/2.7541de7e.chunk.js",
+    "static/js/main.e2793cdb.chunk.js"
   ]
 }
