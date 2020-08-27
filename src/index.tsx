@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { createBrowserHistory } from 'history';
 import { Provider, ReactReduxContext } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
+import { ThemeProvider } from 'styled-components';
+import theme from 'utils/theme';
 import configureStore from './configureStore';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -16,7 +18,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store} context={ReactReduxContext}>
       <ConnectedRouter history={history} context={ReactReduxContext}>
-        <App />
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
       </ConnectedRouter>
     </Provider>
   </React.StrictMode>,
