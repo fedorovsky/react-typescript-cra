@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "https://fedorovsky.github.io/code-react-typescript/static/js/main.7c20fc36.chunk.js",
-    "main.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/main.7c20fc36.chunk.js.map",
-    "runtime-main.js": "https://fedorovsky.github.io/code-react-typescript/static/js/runtime-main.2021d8c3.js",
-    "runtime-main.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/runtime-main.2021d8c3.js.map",
-    "static/js/2.9e1e07a9.chunk.js": "https://fedorovsky.github.io/code-react-typescript/static/js/2.9e1e07a9.chunk.js",
-    "static/js/2.9e1e07a9.chunk.js.map": "https://fedorovsky.github.io/code-react-typescript/static/js/2.9e1e07a9.chunk.js.map",
-    "index.html": "https://fedorovsky.github.io/code-react-typescript/index.html",
-    "precache-manifest.bd06c3d8c8b15e58835a00d56c2681e5.js": "https://fedorovsky.github.io/code-react-typescript/precache-manifest.bd06c3d8c8b15e58835a00d56c2681e5.js",
-    "service-worker.js": "https://fedorovsky.github.io/code-react-typescript/service-worker.js",
-    "static/js/2.9e1e07a9.chunk.js.LICENSE.txt": "https://fedorovsky.github.io/code-react-typescript/static/js/2.9e1e07a9.chunk.js.LICENSE.txt"
+    "main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.3bcd9ba9.chunk.js",
+    "main.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.3bcd9ba9.chunk.js.map",
+    "runtime-main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/runtime-main.ad9f02a5.js",
+    "runtime-main.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/runtime-main.ad9f02a5.js.map",
+    "static/js/2.a928a6d2.chunk.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a928a6d2.chunk.js",
+    "static/js/2.a928a6d2.chunk.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a928a6d2.chunk.js.map",
+    "index.html": "https://fedorovsky.github.io/react-typescript-cra/index.html",
+    "precache-manifest.20490515a622d723f3f9ce7a7bddb933.js": "https://fedorovsky.github.io/react-typescript-cra/precache-manifest.20490515a622d723f3f9ce7a7bddb933.js",
+    "service-worker.js": "https://fedorovsky.github.io/react-typescript-cra/service-worker.js",
+    "static/js/2.a928a6d2.chunk.js.LICENSE.txt": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a928a6d2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2021d8c3.js",
-    "static/js/2.9e1e07a9.chunk.js",
-    "static/js/main.7c20fc36.chunk.js"
+    "static/js/runtime-main.ad9f02a5.js",
+    "static/js/2.a928a6d2.chunk.js",
+    "static/js/main.3bcd9ba9.chunk.js"
   ]
 }
