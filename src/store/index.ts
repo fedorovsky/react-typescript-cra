@@ -1,15 +1,8 @@
 import { combineReducers } from 'redux';
-import { connectRouter, RouterState } from 'connected-react-router';
+import { connectRouter } from 'connected-react-router';
 import { History } from 'history';
-import { usersReducer, UsersState } from './users';
-import integrationReducer, { IntegrationState } from './integration';
-
-// The top-level state object
-export interface RootState {
-  router: RouterState;
-  users: UsersState;
-  integration: IntegrationState;
-}
+import { usersReducer } from './users';
+import { integrationReducer } from './integration';
 
 export const createRootReducer = (history: History) =>
   combineReducers({
@@ -17,3 +10,5 @@ export const createRootReducer = (history: History) =>
     users: usersReducer,
     integration: integrationReducer,
   });
+
+export type RootState = ReturnType<ReturnType<typeof createRootReducer>>;
