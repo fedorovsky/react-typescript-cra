@@ -2,7 +2,7 @@ import { Reducer } from 'redux';
 import { createSelector } from 'reselect';
 import { ThunkAction } from 'redux-thunk';
 import http from 'utils/api';
-import { RootState } from './index';
+import { RootState } from 'store';
 
 /**
  * Constants

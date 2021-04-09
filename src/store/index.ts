@@ -1,14 +1,26 @@
-import { combineReducers } from 'redux';
-import { connectRouter } from 'connected-react-router';
-import { History } from 'history';
-import { usersReducer } from './users';
-import { integrationReducer } from './integration';
+import { createBrowserHistory } from 'history';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { createStore, applyMiddleware } from 'redux';
+import { routerMiddleware } from 'connected-react-router';
+import thunk from 'redux-thunk';
+import rootReducer from './rootReducer';
 
-export const createRootReducer = (history: History) =>
-  combineReducers({
-    router: connectRouter(history),
-    users: usersReducer,
-    integration: integrationReducer,
-  });
+// browser history
+export const history = createBrowserHistory();
 
-export type RootState = ReturnType<ReturnType<typeof createRootReducer>>;
+// compose enhancers
+const enhancer = composeWithDevTools(
+  applyMiddleware(routerMiddleware(history), thunk),
+);
+
+// rehydrate state on app start
+const initialState = {};
+
+// create store
+const store = createStore(rootReducer(history), initialState, enhancer);
+
+export type RootState = ReturnType<typeof store.getState>;
+
+export type AppDispatch = typeof store.dispatch;
+
+export default store;

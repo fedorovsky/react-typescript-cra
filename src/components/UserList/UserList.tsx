@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
-import { userListSelector, fetchUserList } from 'store/users';
+import { userListSelector, fetchUserList } from 'store/users/users';
 import { Wrapper } from './UserList.styled';
 
 const UserList: React.FC = () => {
