@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7060a37fdccbeb860e16601f934a5e2b",
+    "revision": "8e9947c0a4e39b9d68a2964f0298fc58",
     "url": "https://fedorovsky.github.io/react-typescript-cra/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a2926fbf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8478913c1144db2cad2e",
-    "url": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.f63f2ebd.chunk.js"
+    "revision": "dbd6d06eae837dc88392",
+    "url": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.0df80281.chunk.js"
   },
   {
     "revision": "6ace10d06111e23febac",
