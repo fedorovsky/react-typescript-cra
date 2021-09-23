@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.0df80281.chunk.js",
-    "main.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.0df80281.chunk.js.map",
+    "main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.32f2439d.chunk.js",
+    "main.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.32f2439d.chunk.js.map",
     "runtime-main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/runtime-main.ad9f02a5.js",
     "runtime-main.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/runtime-main.ad9f02a5.js.map",
-    "static/js/2.a2926fbf.chunk.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a2926fbf.chunk.js",
-    "static/js/2.a2926fbf.chunk.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a2926fbf.chunk.js.map",
+    "static/js/2.ddeec948.chunk.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.ddeec948.chunk.js",
+    "static/js/2.ddeec948.chunk.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.ddeec948.chunk.js.map",
     "index.html": "https://fedorovsky.github.io/react-typescript-cra/index.html",
-    "precache-manifest.5e113fa6fdf346ccaefeee619138f076.js": "https://fedorovsky.github.io/react-typescript-cra/precache-manifest.5e113fa6fdf346ccaefeee619138f076.js",
+    "precache-manifest.502d1a110682cee884cd7995802aa56e.js": "https://fedorovsky.github.io/react-typescript-cra/precache-manifest.502d1a110682cee884cd7995802aa56e.js",
     "service-worker.js": "https://fedorovsky.github.io/react-typescript-cra/service-worker.js",
-    "static/js/2.a2926fbf.chunk.js.LICENSE.txt": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a2926fbf.chunk.js.LICENSE.txt"
+    "static/js/2.ddeec948.chunk.js.LICENSE.txt": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.ddeec948.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ad9f02a5.js",
-    "static/js/2.a2926fbf.chunk.js",
-    "static/js/main.0df80281.chunk.js"
+    "static/js/2.ddeec948.chunk.js",
+    "static/js/main.32f2439d.chunk.js"
   ]
 }
