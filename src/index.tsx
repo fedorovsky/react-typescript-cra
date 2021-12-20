@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, ReactReduxContext } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
-import { ThemeProvider } from 'styled-components';
 import theme from 'utils/theme';
-import store, { history } from './store';
+import { ThemeProvider } from 'styled-components';
+import { history } from './modules/routerModule';
+import store from './store';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

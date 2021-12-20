@@ -1,26 +1,39 @@
-import { createBrowserHistory } from 'history';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { createStore, applyMiddleware } from 'redux';
-import { routerMiddleware } from 'connected-react-router';
-import thunk from 'redux-thunk';
-import rootReducer from './rootReducer';
-
-// browser history
-export const history = createBrowserHistory();
-
-// compose enhancers
-const enhancer = composeWithDevTools(
-  applyMiddleware(routerMiddleware(history), thunk),
-);
+import { getThunkExtension } from 'redux-dynamic-modules-thunk';
+import { createStore } from 'redux-dynamic-modules';
+import { routerModule } from 'modules/routerModule';
+import { CounterFirstModule } from 'CounterFirst/redux/types';
+import { CounterSecondModule } from 'CounterSecond/redux/types';
 
 // rehydrate state on app start
 const initialState = {};
 
-// create store
-const store = createStore(rootReducer(history), initialState, enhancer);
+const rootModule = {
+  id: 'root-module',
+  reducerMap: {},
+};
 
-export type RootState = ReturnType<typeof store.getState>;
+const store = createStore(
+  {
+    initialState,
+    extensions: [getThunkExtension()],
+    advancedComposeEnhancers: composeWithDevTools({
+      name: 'dynamic-modules-app',
+    }),
+  },
+  rootModule,
+  routerModule,
+);
+
+export type DynamicModules = CounterFirstModule & CounterSecondModule;
+
+// export type StaticModules = {};
+// export type RootState = DynamicModules & StaticModules;
+
+export type RootState = DynamicModules;
 
 export type AppDispatch = typeof store.dispatch;
 
 export default store;
+
+// https://github.com/microsoft/redux-dynamic-modules/issues/118
