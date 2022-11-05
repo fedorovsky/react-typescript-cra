@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.5882e3d3.js",
-    "static/js/260.f98dc580.chunk.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/260.f98dc580.chunk.js",
-    "static/js/2.0f4d69ec.chunk.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.0f4d69ec.chunk.js",
+    "main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.08993b9e.chunk.js",
+    "main.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.08993b9e.chunk.js.map",
+    "runtime-main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/runtime-main.ad9f02a5.js",
+    "runtime-main.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/runtime-main.ad9f02a5.js.map",
+    "static/js/2.a928a6d2.chunk.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a928a6d2.chunk.js",
+    "static/js/2.a928a6d2.chunk.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a928a6d2.chunk.js.map",
     "index.html": "https://fedorovsky.github.io/react-typescript-cra/index.html",
-    "main.5882e3d3.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.5882e3d3.js.map",
-    "260.f98dc580.chunk.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/260.f98dc580.chunk.js.map",
-    "2.0f4d69ec.chunk.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.0f4d69ec.chunk.js.map"
+    "precache-manifest.c8e4009970b656688470b816aec7a7c5.js": "https://fedorovsky.github.io/react-typescript-cra/precache-manifest.c8e4009970b656688470b816aec7a7c5.js",
+    "service-worker.js": "https://fedorovsky.github.io/react-typescript-cra/service-worker.js",
+    "static/js/2.a928a6d2.chunk.js.LICENSE.txt": "https://fedorovsky.github.io/react-typescript-cra/static/js/2.a928a6d2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/main.5882e3d3.js"
+    "static/js/runtime-main.ad9f02a5.js",
+    "static/js/2.a928a6d2.chunk.js",
+    "static/js/main.08993b9e.chunk.js"
   ]
 }
