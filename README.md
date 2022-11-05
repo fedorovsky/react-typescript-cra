@@ -2,4 +2,4 @@
 * React
 * Redux
 
-dynamic redux: https://github.com/fedorovsky/react-typescript-cra/tree/dynamic-modules
+[dynamic-modules](https://github.com/fedorovsky/react-typescript-cra/tree/dynamic-modules)
