@@ -1,5 +1,6 @@
 import { Reducer } from 'redux';
 import { createSelector } from 'reselect';
+import { ThunkAction } from 'redux-thunk';
 import { RootState } from '../index';
 
 /**
