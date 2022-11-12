@@ -18,5 +18,6 @@ jobs:
 
       - name: run CI
         run: |
+          npm install npm@latest -g
           npm install # or yarn install
           npm run lint # or yarn lint
