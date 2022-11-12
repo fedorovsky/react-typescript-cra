@@ -1,22 +1,19 @@
-name: ESlint
+name: Lint
+
 on: [push]
 
 jobs:
-  build:
-    name: Lint
-    runs-on: ubuntu-18.04
-    strategy:
-      matrix:
-        node_version: [14]
-
+  eslint:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node_version: ${{ matrix.node_version }}
-
-      - name: run CI
-        run: |
-          npm install # or yarn install
-          npm run lint # or yarn lint
+          node-version: 16
+      - run: npm ci # or yarn install
+      - uses: sibiraj-s/action-eslint@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }} # Optional
+          eslint-args: '--ignore-path=.gitignore --quiet'
+          extensions: 'js,jsx,ts,tsx'
+          annotations: true
