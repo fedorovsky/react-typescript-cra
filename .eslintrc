@@ -28,6 +28,8 @@
 
   ],
   "rules": {
+    "no-console": "off",
+    "@typescript-eslint/default-param-last": "off",
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
     "react/react-in-jsx-scope": ["off"],
