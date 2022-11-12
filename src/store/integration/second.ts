@@ -56,4 +56,4 @@ interface SecondRequest {
 
 type ActionType = SecondRequest;
 
-type ThunkResult<R> = ThunkAction<R, RootState, void, ActionType>;
+// type ThunkResult<R> = ThunkAction<R, RootState, void, ActionType>;
