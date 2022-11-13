@@ -1,6 +1,5 @@
 import { createBrowserHistory } from 'history';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { createStore, applyMiddleware } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
 import { routerMiddleware } from 'connected-react-router';
 import thunk from 'redux-thunk';
 import rootReducer from './rootReducer';
@@ -8,16 +7,10 @@ import rootReducer from './rootReducer';
 // browser history
 export const history = createBrowserHistory();
 
-// compose enhancers
-const enhancer = composeWithDevTools(
-  applyMiddleware(routerMiddleware(history), thunk),
-);
-
-// rehydrate state on app start
-const initialState = {};
-
-// create store
-const store = createStore(rootReducer(history), initialState, enhancer);
+const store = configureStore({
+  reducer: rootReducer(history),
+  middleware: [routerMiddleware(history), thunk],
+});
 
 export type RootState = ReturnType<typeof store.getState>;
 

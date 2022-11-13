@@ -7894,17 +7894,12 @@
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
 
-"redux-devtools-extension@^2.13.8":
-  "integrity" "sha512-8qlpooP2QqPtZHQZRhx3x3OP5skEV1py/zUdMY28WNAocbafxdG2tRD1MWE7sp8obGMNYuLWanhhQ7EQvT1FBg=="
-  "resolved" "https://registry.npmjs.org/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz"
-  "version" "2.13.8"
-
 "redux-thunk@^2.3.0", "redux-thunk@^2.4.2":
   "integrity" "sha512-+P3TjtnP0k/FEjcBL5FZpoovtvrTNT/UXd4/sluaSyrURlSlhLSzEdfsTBW7WsKB6yPvgd7q/iZPICFjW4o57Q=="
   "resolved" "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.4.2.tgz"
   "version" "2.4.2"
 
-"redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", "redux@^3.1.0 || ^4.0.0", "redux@^3.6.0 || ^4.0.0", "redux@^4", "redux@^4.0.0", "redux@^4.0.5", "redux@^4.2.0":
+"redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", "redux@^3.6.0 || ^4.0.0", "redux@^4", "redux@^4.0.0", "redux@^4.0.5", "redux@^4.2.0":
   "integrity" "sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.2.0.tgz"
   "version" "4.2.0"
