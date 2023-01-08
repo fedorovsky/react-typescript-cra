@@ -1,5 +1,6 @@
 import { Reducer } from 'redux';
 import { createSelector } from 'reselect';
+import { ThunkAction } from '@reduxjs/toolkit';
 import { RootState } from '../index';
 
 /**
@@ -55,4 +56,16 @@ interface SecondRequest {
 
 type ActionType = SecondRequest;
 
-// type ThunkResult<R> = ThunkAction<R, RootState, void, ActionType>;
+type ThunkResult<R> = ThunkAction<R, RootState, void, ActionType>;
+
+export const getSecond = (): ThunkResult<void> => {
+  return (dispatch, getState) => {
+    console.log('=========');
+    console.log('dispatch', dispatch);
+    console.log('getState', getState);
+    console.log('=========');
+    dispatch({
+      type: ACTION.SECOND_REQUEST,
+    });
+  };
+};
