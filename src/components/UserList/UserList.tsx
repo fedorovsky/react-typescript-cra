@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { useSelector, shallowEqual } from 'react-redux';
 import { userListSelector, fetchUserList } from 'store/slices/usersSlice';
+import useAppSelector from 'hooks/useAppSelector';
 import useAppDispatch from 'hooks/useAppDispatch';
 import { getSecond } from 'store/integration/second';
 import { Wrapper } from './UserList.styled';
 
 const UserList: React.FC = () => {
-  const userList = useSelector(userListSelector, shallowEqual);
+  const userList = useAppSelector(userListSelector);
   const dispatch = useAppDispatch();
 
   const handleClick = () => dispatch(fetchUserList());

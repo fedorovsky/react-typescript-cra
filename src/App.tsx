@@ -7,8 +7,18 @@ import Users from 'components/routes/Users';
 const App: React.FC = () => (
   <div>
     <div>
-      <NavLink to="/home">Home</NavLink>
-      <NavLink to="/users">Users</NavLink>
+      <NavLink
+        to="/home"
+        style={({ isActive }) => (isActive ? { color: 'red' } : undefined)}
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/users"
+        style={({ isActive }) => (isActive ? { color: 'red' } : undefined)}
+      >
+        Users
+      </NavLink>
     </div>
     <div>
       <Routes>
