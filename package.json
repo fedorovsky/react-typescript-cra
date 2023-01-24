@@ -34,7 +34,7 @@
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx"
   },
-  "homepage": "",
+  "homepage": "https://fedorovsky.github.io/react-typescript-cra/",
   "browserslist": {
     "production": [
       ">0.2%",
