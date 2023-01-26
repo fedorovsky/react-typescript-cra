@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-typescript-cra/static/js/main.052d277c.js",
-    "index.html": "/react-typescript-cra/index.html",
-    "main.052d277c.js.map": "/react-typescript-cra/static/js/main.052d277c.js.map"
+    "main.js": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.41bcf158.js",
+    "index.html": "https://fedorovsky.github.io/react-typescript-cra/index.html",
+    "main.41bcf158.js.map": "https://fedorovsky.github.io/react-typescript-cra/static/js/main.41bcf158.js.map"
   },
   "entrypoints": [
-    "static/js/main.052d277c.js"
+    "static/js/main.41bcf158.js"
   ]
 }
