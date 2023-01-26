@@ -3,12 +3,13 @@ import UserList from 'components/UserList';
 import { Route, NavLink, Routes } from 'react-router-dom';
 import Home from 'components/routes/Home';
 import Users from 'components/routes/Users';
+import NoMatch from 'components/routes/NoMatch';
 
 const App: React.FC = () => (
   <div>
     <div>
       <NavLink
-        to="/home"
+        to="/"
         style={({ isActive }) => (isActive ? { color: 'red' } : undefined)}
       >
         Home
@@ -19,11 +20,13 @@ const App: React.FC = () => (
       >
         Users
       </NavLink>
+      <NavLink to="/nothing-here">Nothing</NavLink>
     </div>
     <div>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/users" element={<Users />} />
+        <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
     <UserList />
