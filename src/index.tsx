@@ -15,8 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store} context={ReactReduxContext}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <h1>PUBLIC_URL - {process.env.PUBLIC_URL}</h1>
+        <h2>master</h2>
         <ThemeProvider theme={theme}>
           <App />
         </ThemeProvider>
