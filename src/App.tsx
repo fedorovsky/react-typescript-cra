@@ -7,6 +7,7 @@ import NoMatch from 'components/routes/NoMatch';
 
 const App: React.FC = () => (
   <div>
+    <img src={`${process.env.PUBLIC_URL}/logo192.png`} alt="alt" />
     <div>
       <NavLink
         to="/"
